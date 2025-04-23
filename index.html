@@ -2,48 +2,72 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Hello</title>
+  <title>Mubeen Sadiq</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
   <style>
     body {
       margin: 0;
-      background-color: black;
+      background-color: #000;
       color: white;
-      font-family: Arial, sans-serif;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       height: 100vh;
-      display: flex;
-      flex-direction: column;
-    }
-
-    .navbar {
-      display: flex;
-      justify-content: flex-end;
-      padding: 20px;
-      gap: 30px;
-    }
-
-    .navbar a {
-      color: white;
-      text-decoration: none;
-      font-weight: bold;
-    }
-
-    .center {
-      flex-grow: 1;
       display: flex;
       justify-content: center;
       align-items: center;
-      font-size: 40px;
+    }
+
+    .links-container {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      text-align: center;
+    }
+
+    .link-button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      color: white;
+      text-decoration: none;
+      font-size: 16px;
+      font-weight: 500;
+      padding: 12px 20px;
+      border: 1px solid white;
+      border-radius: 8px;
+      transition: all 0.3s ease-in-out;
+    }
+
+    .link-button:hover {
+      color: #00f0ff;
+      border-color: #00f0ff;
+      box-shadow: 0 0 10px #00f0ff;
+      transform: scale(1.05);
+    }
+
+    .link-button i {
+      font-size: 18px;
+    }
+
+    @media (max-width: 500px) {
+      .link-button {
+        font-size: 14px;
+        padding: 10px 16px;
+      }
     }
   </style>
 </head>
 <body>
-  <div class="navbar">
-    <a href="your-resume-link.pdf" target="_blank">My Resume</a>
-    <a href="https://www.linkedin.com/in/your-linkedin" target="_blank">LinkedIn</a>
-  </div>
-
-  <div class="center">
-    Hello
+  <div class="links-container">
+    <a class="link-button" href="https://drive.google.com/file/d/1_aQopTMPQtOjte3l6-ubBAu3BAHmgQbf/view?usp=drive_link" target="_blank">
+      <i class="fas fa-file-alt"></i> My Resume
+    </a>
+    <a class="link-button" href="https://www.linkedin.com/in/mubeen-sadiq/" target="_blank">
+      <i class="fab fa-linkedin"></i> LinkedIn
+    </a>
+    <a class="link-button" href="https://github.com/mubeen-s" target="_blank">
+      <i class="fab fa-github"></i> GitHub
+    </a>
   </div>
 </body>
 </html>
